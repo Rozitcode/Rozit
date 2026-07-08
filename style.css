@@ -1,0 +1,135 @@
+/* RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+ /* CENTERING */
+
+.main-content {
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+
+form {
+  width: 100%;
+}
+
+
+fieldset {
+  border: 1px solid #d4d4d4;
+  border-radius: 0.25rem;
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+}
+
+legend {
+  font-size: 2rem;
+  font-weight: normal;
+  border: 1px solid #d6d6d6;
+  padding: 1.2rem 1.5rem;
+  margin-left: 1.5rem;
+}
+
+
+/* FORM FIELDS */
+
+.form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.4rem;
+}
+
+input[type="text"],
+textarea {
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 0.6rem;
+  border: 1px solid #c6c6c6;
+  border-radius: 0.2rem;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #6c8ee0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+/* SUBMIT BUTTON */
+
+#submit-button {
+  font-size: 1rem;
+  padding: 0.7rem 2rem;
+  background-color: #6c8ee0;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+#submit-button:hover {
+  background-color: #5677c9;
+}
+
+
+/* RESPONSIVE LAYOUT */
+
+
+/* Smart-phone: up to 25rem - fields stay stacked (default above) */
+
+/* Tablet: between 25rem and 40rem */
+@media (min-width: 25rem) {
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
+    row-gap: 1.25rem;
+  }
+
+  .form-group-full {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Desktop: between 40rem and 50rem (max-width 50rem) */
+@media (min-width: 40rem) {
+  fieldset {
+    padding: 2rem;
+  }
+
+  .form-grid {
+    column-gap: 2rem;
+  }
+}

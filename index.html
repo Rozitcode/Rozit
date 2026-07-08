@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>printing-output</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>My title</h1>
-    <p>intro paragraph...</p>
 
-    <script src="js/index.js"></script>
+  <main class="main-content">
+    <form id="contact-form">
+      <fieldset>
+        <legend>Form Assignment</legend>
+
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+          </div>
+
+          <div class="form-group form-group-full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+          </div>
+
+        </div>
+
+        <input type="button" id="submit-button" value="Submit">
+
+      </fieldset>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
