@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-labelledby="icon-desc">
+  <title id="icon-desc">Minimal line-art icon of a shopping basket</title>
+  <rect width="160" height="160" fill="#d6e6fb"/>
+  <g fill="none" stroke="#0a1f44" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- basket body -->
+    <path d="M38 66 L122 66 L110 128 L50 128 Z"/>
+    <!-- handle -->
+    <path d="M56 66 C56 40 104 40 104 66"/>
+    <!-- vertical ribs -->
+    <path d="M64 66 L60 128 M80 66 L80 128 M96 66 L100 128" stroke-width="2" opacity="0.6"/>
+    <!-- top rim -->
+    <line x1="34" y1="66" x2="126" y2="66" stroke-width="4"/>
+  </g>
+  <!-- three dots representing items -->
+  <g fill="#0a1f44">
+    <circle cx="70" cy="90" r="3"/>
+    <circle cx="90" cy="96" r="3"/>
+    <circle cx="80" cy="108" r="3"/>
+  </g>
+</svg>

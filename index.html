@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Form</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+
+    <!-- Font Awesome (used for the footer's small link icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-  <main class="main-content">
-    <form id="contact-form">
-      <fieldset>
-        <legend>Form Assignment</legend>
+    <main class="widget-container">
 
-        <div class="form-grid">
+        <!-- Masthead: compact lockup, image + tag-line -->
+        <header class="widget-masthead">
+            <img src="img/basket-icon.svg" alt="Minimal line-art icon of a shopping basket" class="masthead-image">
+            <div class="masthead-text">
+                <h1 class="widget-title">Shopping List</h1>
+                <p class="widget-tagline">What do you need to buy today?</p>
+            </div>
+        </header>
 
-          <div class="form-group">
-            <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" name="fullname">
-          </div>
+        <!-- Main Content -->
+        <section class="widget-content">
 
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email">
-          </div>
+            <label for="item-input" class="field-label">Item</label>
+            <input type="text" id="item-input" placeholder="Start typing an item&hellip;" autocomplete="off">
 
-          <div class="form-group form-group-full">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5"></textarea>
-          </div>
+            <button id="add-item-btn" type="button">ADD TO LIST</button>
 
-        </div>
+            <p class="feedback" id="error-feedback"></p>
 
-        <input type="button" id="submit-button" value="Submit">
+            <ol class="item-list" id="dynamic-list"></ol>
 
-      </fieldset>
-    </form>
-  </main>
+        </section>
 
-  <script src="script.js"></script>
+        <!-- Footer: text-style social-media links -->
+        <footer class="widget-footer">
+            <nav class="social-links" aria-label="Social media links">
+                <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
+                <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+                <a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i><span>Pinterest</span></a>
+            </nav>
+        </footer>
+
+    </main>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
